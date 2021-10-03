@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace commandAPI.tests
+namespace commandapi.tests
 {
     public class UnitTest1
     {

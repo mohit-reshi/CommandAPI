@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations;
 
 
 
-namespace CommandAPI.Models
+namespace commandapi.Models
 {
  public class Command
  {
- Key]
+ [Key]
  [Required]    
  public int Id {get; set;}
  [Required]

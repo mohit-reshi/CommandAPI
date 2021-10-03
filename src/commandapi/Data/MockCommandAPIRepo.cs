@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using CommandAPI.Models;
+using commandapi.Models;
 
 
 
-namespace CommandAPI.Data
+namespace commandapi.Data
 {
- public class MockCommandAPIRepo : ICommandAPIRepo
+ public class MockcommandapiRepo : IcommandapiRepo
  {
      public void CreateCommand(Command cmd)
      {
@@ -15,12 +15,13 @@ namespace CommandAPI.Data
      {
          throw new System.NotImplementedException();
      }
-      public IEnumerable<Command> getAllCommand()
+      public IEnumerable<Command> GetAllCommands()
      {
          var commands = new List<Command>
         {
             new Command{
-                Id=0, HowTo="How to generate a migration",
+                Id=0,
+                HowTo="How to generate a migration",
                  CommandLine="dotnet ef migrations add <Name of Migration>",
                     Platform=".Net Core EF"},
             new Command{
@@ -34,13 +35,14 @@ namespace CommandAPI.Data
         };
  return commands;
      }
-      public void GetCommandById(int id)
+      public Command GetCommandById(int id)
      {
-         return new Command{Id=0, HowTo="How to generate a migration",
+         return new Command{
+             Id=0, HowTo="How to generate a migration",
                             CommandLine="dotnet ef migrations add <Name of Migration>",
                              Platform=".Net Core EF"};
      }
-      public void SaveChanges()
+      public bool SaveChanges()
      {
          throw new System.NotImplementedException();
      }

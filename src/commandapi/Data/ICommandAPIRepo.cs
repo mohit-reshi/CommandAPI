@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using CommandAPI.Models;
+using commandapi.Models;
 
-namespace CommandAPI.Data
+namespace commandapi.Data
 {
- public interface ICommandAPIRepo
+ public interface IcommandapiRepo
  {
  bool SaveChanges();
  IEnumerable<Command> GetAllCommands();

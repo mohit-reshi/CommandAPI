@@ -21,6 +21,7 @@ namespace commandapi
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                
                 });
     }
 }
